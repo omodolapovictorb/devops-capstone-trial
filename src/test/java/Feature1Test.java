@@ -17,7 +17,7 @@ public class Feature1Test {
 
     private WebDriver driver;
     private String title = "Intellipaat";
-    private String url = "http://192.168.0.103/";
+    private String url = "http://35.182.136.11/";
     private String xPath = "/html/body";
 
     @BeforeTest
