@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="10885" started-at="2020-05-07T07:46:38 CST" finished-at="2020-05-07T07:46:49 CST">
+  <suite name="Command line suite" duration-ms="986" started-at="2020-05-09T09:14:18Z" finished-at="2020-05-09T09:14:19Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="10885" started-at="2020-05-07T07:46:38 CST" finished-at="2020-05-07T07:46:49 CST">
-      <class name="testcases.feature1.f1test">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="beforetest" is-config="true" duration-ms="3033" started-at="2020-05-07T07:46:38 CST" finished-at="2020-05-07T07:46:41 CST">
+    <test name="Command line test" duration-ms="986" started-at="2020-05-09T09:14:18Z" finished-at="2020-05-09T09:14:19Z">
+      <class name="Feature1Test">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Feature1Test@2437c6dc]" name="beforetest" is-config="true" duration-ms="744" started-at="2020-05-09T17:14:18Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="open()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="open" is-config="true" duration-ms="5049" started-at="2020-05-07T07:46:41 CST" finished-at="2020-05-07T07:46:46 CST">
+        <test-method status="PASS" signature="open()[pri:0, instance:Feature1Test@2437c6dc]" name="open" is-config="true" duration-ms="56" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="TitleTest()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="TitleTest" duration-ms="12" started-at="2020-05-07T07:46:46 CST" finished-at="2020-05-07T07:46:46 CST">
+        <test-method status="PASS" signature="TitleTest()[pri:0, instance:Feature1Test@2437c6dc]" name="TitleTest" duration-ms="6" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleTest -->
-        <test-method status="PASS" signature="open()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="open" is-config="true" duration-ms="2188" started-at="2020-05-07T07:46:46 CST" finished-at="2020-05-07T07:46:49 CST">
+        <test-method status="PASS" signature="open()[pri:0, instance:Feature1Test@2437c6dc]" name="open" is-config="true" duration-ms="13" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="websiteTest()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="websiteTest" duration-ms="9" started-at="2020-05-07T07:46:49 CST" finished-at="2020-05-07T07:46:49 CST">
+        <test-method status="PASS" signature="websiteAvailabilityTest()[pri:0, instance:Feature1Test@2437c6dc]" name="websiteAvailabilityTest" duration-ms="5" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- websiteTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testcases.feature1.f1test@35f983a6]" name="close" is-config="true" duration-ms="558" started-at="2020-05-07T07:46:49 CST" finished-at="2020-05-07T07:46:49 CST">
+        </test-method> <!-- websiteAvailabilityTest -->
+        <test-method status="PASS" signature="open()[pri:0, instance:Feature1Test@2437c6dc]" name="open" is-config="true" duration-ms="9" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="xPathTest()[pri:0, instance:Feature1Test@2437c6dc]" name="xPathTest" duration-ms="73" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xPathTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Feature1Test@2437c6dc]" name="close" is-config="true" duration-ms="67" started-at="2020-05-09T17:14:19Z" finished-at="2020-05-09T17:14:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testcases.feature1.f1test -->
+      </class> <!-- Feature1Test -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

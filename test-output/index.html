@@ -5,8 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="testcases.feature1.f1test" hash-for-method="TitleTest">TitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="Feature1Test" hash-for-method="TitleTest">TitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="testcases.feature1.f1test" hash-for-method="websiteTest">websiteTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="Feature1Test" hash-for-method="websiteAvailabilityTest">websiteAvailabilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="Feature1Test" hash-for-method="xPathTest">xPathTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -125,7 +130,7 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.feature1.f1test</span>
+              <span class="class-name">Feature1Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,9 +142,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="websiteTest">
-                  </a> <!-- websiteTest -->
-                  <span class="method-name">websiteTest</span>
+                  <a name="websiteAvailabilityTest">
+                  </a> <!-- websiteAvailabilityTest -->
+                  <span class="method-name">websiteAvailabilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xPathTest">
+                  </a> <!-- xPathTest -->
+                  <span class="method-name">xPathTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,11 +163,11 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Command line suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.feature1.f1test&quot;/&gt;
+      &lt;class name=&quot;Feature1Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -195,20 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TitleTest')
-data.setCell(0, 2, 'testcases.feature1.f1test')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'xPathTest')
+data.setCell(0, 2, 'Feature1Test')
+data.setCell(0, 3, 73);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'websiteTest')
-data.setCell(1, 2, 'testcases.feature1.f1test')
-data.setCell(1, 3, 9);
+data.setCell(1, 1, 'TitleTest')
+data.setCell(1, 2, 'Feature1Test')
+data.setCell(1, 3, 6);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'websiteAvailabilityTest')
+data.setCell(2, 2, 'Feature1Test')
+data.setCell(2, 3, 5);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 ms</span>
+              <span class="suite-total-time">Total running time: 84 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -234,30 +250,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.feature1.f1test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Feature1Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforetest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">open</span>
-                <span class="method-start">3051 ms</span>
+                <span class="method-start">751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TitleTest</span>
-                <span class="method-start">8101 ms</span>
+                <span class="method-start">807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">open</span>
-                <span class="method-start">8117 ms</span>
+                <span class="method-start">814 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">websiteTest</span>
-                <span class="method-start">10305 ms</span>
+                <span class="method-name">websiteAvailabilityTest</span>
+                <span class="method-start">827 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">open</span>
+                <span class="method-start">833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">xPathTest</span>
+                <span class="method-start">842 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">10315 ms</span>
+                <span class="method-start">916 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
